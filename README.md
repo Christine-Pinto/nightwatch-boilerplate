@@ -18,7 +18,7 @@ $ npm install
 
 ## Run Tests
 
-In this boilerplate you find one test which does a simple GUI Test on the react part of the airBnB Webiste. The config is setup that the selenium server starts with the test and you do not have to start the server manuelly (file is under /lib/sel-serv.jar)
+In this boilerplate you find one test which does a simple GUI Test on the react part of the airBnB Webiste. The configuration is set up (nightwatch.json) that the selenium server is started with the test and you do not have to start the server manuelly (file is under /lib/sel-serv.jar). The test is saved under test/src/ .
 
 ```sh
 $ cd nightwatch-boilerplate
