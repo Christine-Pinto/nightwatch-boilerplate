@@ -39,8 +39,11 @@ Running:  Demo test https://www.airbnb.de/
 OK. 1 assertions passed. (6.869s)
 
 Running:  part two
+
  √ Element <//div[@id="searchbar"]> was present after 46 milliseconds.
+ 
  √ Element <div[class=map-canvas]> was present after 688 milliseconds.
+ 
  √ Expected element <#header-search-form> to have value contain: "Zürich"
 
 OK. 3 assertions passed. (8.251s)
