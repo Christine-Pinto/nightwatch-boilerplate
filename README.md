@@ -25,14 +25,13 @@ $ cd nightwatch-boilerplate
 $ npm test
 ```
 
-Output should look like this
-> nightwatch@0.9.4 test C:\workspace\nightwatch
-> nightwatch test/src
+### Output should look like this
+nightwatch@0.9.4 test C:\workspace\nightwatch
+nightwatch test/src
 
 Starting selenium server... started - PID:  5132
 
 [Src\airbnb] Test Suite
-===========================
 
 Running:  Demo test https://www.airbnb.de/
  √ Element <body> was visible after 3278 milliseconds.
