@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="2">
+
+  <testsuite name="common"
+    errors="1" failures="0" hostname="" id="" package="common" skipped="1"
+    tests="2" time="0.02400" timestamp="Mon, 20 Jun 2016 13:07:35 GMT">
+  
+    <testcase name="require" time="0.02400" assertions="0">
+    </testcase>
+      <system-err>
+          Error while running [Common / require]:
+
+  TypeError: Path must be a string. Received { capabilities: {},
+  globals: 
+   { runGroupGlobal: [Function],
+     interceptStartFn: [Function],
+     restoreStartFn: [Function],
+     beforeEach: [Function],
+     afterEach: [Function],
+     test_settings: 
+      { launch_url: &#39;http://localhost&#39;,
+        selenium_host: &#39;127.0.0.1&#39;,
+        selenium_port: 4444,
+        silent: true,
+        disable_colors: false,
+        screenshots: [Object],
+        desiredCapabilities: [Object],
+        custom_commands_path: &#39;./test/custom-commands&#39;,
+        custom_assertions_path: &#39;&#39;,
+        page_objects_path: &#39;&#39;,
+        globals: [Object],
+        output: true,
+        test_workers: false,
+        parallelMode: false,
+        live_output: false,
+        detailed_output: true,
+        start_session: true,
+        report_prefix: &#39;FIREFOX_43.0.1_WINDOWS_&#39;,
+        test_worker: false,
+        modulesNo: 9 } },
+  sessionId: null,
+  options: 
+   { screenshots: false,
+     skip_testcases_on_fail: true,
+     log_screenshot_data: true,
+     desiredCapabilities: 
+      { browserName: &#39;firefox&#39;,
+        javascriptEnabled: true,
+        acceptSslCerts: true,
+        platform: &#39;ANY&#39;,
+        name: &#39;Common&#39; } },
+  launchUrl: &#39;http://localhost&#39;,
+  launch_url: &#39;http://localhost&#39;,
+  Keys: 
+   { NULL: &#39;&#39;,
+     CANCEL: &#39;&#39;,
+     HELP: &#39;&#39;,
+     BACK_SPACE: &#39;&#39;,
+     TAB: &#39;&#39;,
+     CLEAR: &#39;&#39;,
+     RETURN: &#39;&#39;,
+     ENTER: &#39;&#39;,
+     SHIFT: &#39;&#39;,
+     CONTROL: &#39;&#39;,
+     ALT: &#39;&#39;,
+     PAUSE: &#39;&#39;,
+     ESCAPE: &#39;&#39;,
+     SPACE: &#39;&#39;,
+     PAGEUP: &#39;&#39;,
+     PAGEDOWN: &#39;&#39;,
+     END: &#39;&#39;,
+     HOME: &#39;&#39;,
+     LEFT_ARROW: &#39;&#39;,
+     UP_ARROW: &#39;&#39;,
+     RIGHT_ARROW: &#39;&#39;,
+     DOWN_ARROW: &#39;&#39;,
+     ARROW_LEFT: &#39;&#39;,
+     ARROW_UP: &#39;&#39;,
+     ARROW_RIGHT: &#39;&#39;,
+     ARROW_DOWN: &#39;&#39;,
+     INSERT: &#39;&#39;,
+     DELETE: &#39;&#39;,
+     SEMICOLON: &#39;&#39;,
+     EQUALS: &#39;&#39;,
+     NUMPAD0: &#39;&#39;,
+     NUMPAD1: &#39;&#39;,
+     NUMPAD2: &#39;&#39;,
+     NUMPAD3: &#39;&#39;,
+     NUMPAD4: &#39;&#39;,
+     NUMPAD5: &#39;&#39;,
+     NUMPAD6: &#39;&#39;,
+     NUMPAD7: &#39;&#39;,
+     NUMPAD8: &#39;&#39;,
+     NUMPAD9: &#39;&#39;,
+     MULTIPLY: &#39;&#39;,
+     ADD: &#39;&#39;,
+     SEPARATOR: &#39;&#39;,
+     SUBTRACT: &#39;&#39;,
+     DECIMAL: &#39;&#39;,
+     DIVIDE: &#39;&#39;,
+     F1: &#39;&#39;,
+     F2: &#39;&#39;,
+     F3: &#39;&#39;,
+     F4: &#39;&#39;,
+     F5: &#39;&#39;,
+     F6: &#39;&#39;,
+     F7: &#39;&#39;,
+     F8: &#39;&#39;,
+     F9: &#39;&#39;,
+     F10: &#39;&#39;,
+     F11: &#39;&#39;,
+     F12: &#39;&#39;,
+     COMMAND: &#39;&#39;,
+     META: &#39;&#39; },
+  session: [Function: commandFn],
+  sessions: [Function: commandFn],
+  timeouts: [Function: commandFn],
+  timeoutsAsyncScript: [Function: commandFn],
+  timeoutsImplicitWait: [Function: commandFn],
+  element: [Function: commandFn],
+  elementIdElement: [Function: commandFn],
+  elements: [Function: commandFn],
+  elementIdElements: [Function: commandFn],
+  elementActive: [Function: commandFn],
+  elementIdAttribute: [Function: commandFn],
+  elementIdClick: [Function: commandFn],
+  elementIdCssProperty: [Function: commandFn],
+  elementIdDisplayed: [Function: commandFn],
+  elementIdLocationInView: [Function: commandFn],
+  elementIdLocation: [Function: commandFn],
+  elementIdName: [Function: commandFn],
+  elementIdClear: [Function: commandFn],
+  elementIdSelected: [Function: commandFn],
+  elementIdEnabled: [Function: commandFn],
+  elementIdEquals: [Function: commandFn],
+  elementIdSize: [Function: commandFn],
+  elementIdText: [Function: commandFn],
+  elementIdValue: [Function: commandFn],
+  submit: [Function: commandFn],
+  source: [Function: commandFn],
+  contexts: [Function: commandFn],
+  currentContext: [Function: commandFn],
+  setContext: [Function: commandFn],
+  getOrientation: [Function: commandFn],
+  setOrientation: [Function: commandFn],
+  moveTo: [Function: commandFn],
+  doubleClick: [Function: commandFn],
+  mouseButtonClick: [Function: commandFn],
+  mouseButtonDown: [Function: commandFn],
+  mouseButtonUp: [Function: commandFn],
+  execute: [Function: commandFn],
+  executeAsync: [Function: commandFn],
+  execute_async: [Function: commandFn],
+  frame: [Function: commandFn],
+  frameParent: [Function: commandFn],
+  window: [Function: commandFn],
+  windowHandle: [Function: commandFn],
+  windowMaximize: [Function: commandFn],
+  window_handle: [Function: commandFn],
+  windowHandles: [Function: commandFn],
+  window_handles: [Function: commandFn],
+  windowSize: [Function: commandFn],
+  windowPosition: [Function: commandFn],
+  refresh: [Function: commandFn],
+  back: [Function: commandFn],
+  forward: [Function: commandFn],
+  screenshot: [Function: commandFn],
+  url: [Function: commandFn],
+  status: [Function: commandFn],
+  title: [Function: commandFn],
+  keys: [Function: commandFn],
+  cookie: [Function: commandFn],
+  acceptAlert: [Function: commandFn],
+  accept_alert: [Function: commandFn],
+  dismissAlert: [Function: commandFn],
+  setAlertText: [Function: commandFn],
+  getAlertText: [Function: commandFn],
+  dismiss_alert: [Function: commandFn],
+  sessionLog: [Function: commandFn],
+  sessionLogTypes: [Function: commandFn],
+  click: [Function: commandFn],
+  clearValue: [Function: commandFn],
+  getAttribute: [Function: commandFn],
+  getCssProperty: [Function: commandFn],
+  getElementSize: [Function: commandFn],
+  getLocation: [Function: commandFn],
+  getLocationInView: [Function: commandFn],
+  getTagName: [Function: commandFn],
+  getText: [Function: commandFn],
+  getValue: [Function: commandFn],
+  isVisible: [Function: commandFn],
+  moveToElement: [Function: commandFn],
+  setValue: [Function: commandFn],
+  submitForm: [Function: commandFn],
+  sendKeys: [Function: commandFn],
+  switchWindow: [Function: commandFn],
+  resizeWindow: [Function: commandFn],
+  setWindowPosition: [Function: commandFn],
+  maximizeWindow: [Function: commandFn],
+  saveScreenshot: [Function: commandFn],
+  getTitle: [Function: commandFn],
+  closeWindow: [Function: commandFn],
+  init: [Function: commandFn],
+  urlHash: [Function: commandFn],
+  getCookies: [Function: commandFn],
+  getCookie: [Function: commandFn],
+  setCookie: [Function: commandFn],
+  deleteCookie: [Function: commandFn],
+  deleteCookies: [Function: commandFn],
+  injectScript: [Function: commandFn],
+  getLogTypes: [Function: commandFn],
+  getLog: [Function: commandFn],
+  isLogAvailable: [Function: commandFn],
+  waitForElementNotPresent: [Function: commandFn],
+  waitForElementNotVisible: [Function: commandFn],
+  waitForElementPresent: [Function: commandFn],
+  waitForElementVisible: [Function: commandFn],
+  end: [Function: commandFn],
+  pause: [Function: commandFn],
+  perform: [Function: commandFn],
+  useCss: [Function: commandFn],
+  useRecursion: [Function: commandFn],
+  useXpath: [Function: commandFn],
+  expect: { element: [Function] },
+  assert: 
+   { AssertionError: [Function],
+     fail: [Function],
+     ok: [Function],
+     equal: [Function],
+     notEqual: [Function],
+     deepEqual: [Function],
+     deepStrictEqual: [Function],
+     notDeepEqual: [Function],
+     notDeepStrictEqual: [Function],
+     strictEqual: [Function],
+     notStrictEqual: [Function],
+     throws: [Function],
+     doesNotThrow: [Function],
+     ifError: [Function],
+     attributeContains: [Function: commandFn],
+     attributeEquals: [Function: commandFn],
+     containsText: [Function: commandFn],
+     cssClassNotPresent: [Function: commandFn],
+     cssClassPresent: [Function: commandFn],
+     cssProperty: [Function: commandFn],
+     elementNotPresent: [Function: commandFn],
+     elementPresent: [Function: commandFn],
+     hidden: [Function: commandFn],
+     title: [Function: commandFn],
+     urlContains: [Function: commandFn],
+     urlEquals: [Function: commandFn],
+     value: [Function: commandFn],
+     valueContains: [Function: commandFn],
+     visible: [Function: commandFn] },
+  verify: 
+   { AssertionError: [Function],
+     fail: [Function],
+     ok: [Function],
+     equal: [Function],
+     notEqual: [Function],
+     deepEqual: [Function],
+     deepStrictEqual: [Function],
+     notDeepEqual: [Function],
+     notDeepStrictEqual: [Function],
+     strictEqual: [Function],
+     notStrictEqual: [Function],
+     throws: [Function],
+     doesNotThrow: [Function],
+     ifError: [Function],
+     attributeContains: [Function: commandFn],
+     attributeEquals: [Function: commandFn],
+     containsText: [Function: commandFn],
+     cssClassNotPresent: [Function: commandFn],
+     cssClassPresent: [Function: commandFn],
+     cssProperty: [Function: commandFn],
+     elementNotPresent: [Function: commandFn],
+     elementPresent: [Function: commandFn],
+     hidden: [Function: commandFn],
+     title: [Function: commandFn],
+     urlContains: [Function: commandFn],
+     urlEquals: [Function: commandFn],
+     value: [Function: commandFn],
+     valueContains: [Function: commandFn],
+     visible: [Function: commandFn] },
+  currentTest: 
+   { name: &#39;require&#39;,
+     module: &#39;common&#39;,
+     results: 
+      { steps: [Object],
+        passed: 0,
+        failed: 0,
+        errors: 0,
+        skipped: 0,
+        tests: 0,
+        testcases: {},
+        timestamp: &#39;Mon, 20 Jun 2016 13:07:35 GMT&#39;,
+        time: 0 },
+     group: &#39;&#39; } }
+    at assertPath (path.js:8:11)
+    at Object.win32.join (path.js:221:5)
+    at Object.module.exports.require (C:\workspace\nightwatch\test\common.js:6:25)
+    at Module.call (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:137:13)
+  Error while running [Lib / Globals / runGroupGlobal]:
+
+  TypeError: done is not a function
+    at C:\workspace\nightwatch\test\lib\globals.js:13:16
+    at FSReqWrap.oncomplete (fs.js:82:15)
+  Error while running [Lib / Mochatest / addBefore]:
+
+  TypeError: done is not a function
+    at C:\workspace\nightwatch\test\lib\globals\commands.js:11:9
+    at Nightwatch.&lt;anonymous&gt; (C:\workspace\nightwatch\test\lib\nightwatch.js:31:9)
+    at Nightwatch.g (events.js:260:16)
+    at emitThree (events.js:97:13)
+    at Nightwatch.emit (events.js:175:7)
+    at HttpRequest.&lt;anonymous&gt; (C:\workspace\nightwatch\lib\index.js:469:12)
+    at emitThree (events.js:97:13)
+    at HttpRequest.emit (events.js:175:7)
+    at IncomingMessage.&lt;anonymous&gt; (C:\workspace\nightwatch\lib\http\request.js:157:16)
+    at emitNone (events.js:72:20)
+  Error while running [Lib / Nightwatch / client]:
+
+  TypeError: this.@module[fnName].apply is not a function
+    at Module.call (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:125:13)
+    at nextTickCallbackWith0Args (node.js:420:9)
+    at process._tickCallback (node.js:349:13)
+  Error while running [Lib / Nocks / attributeValue]:
+
+  Error: Error encoding response body into JSON
+    at Object.reply (C:\workspace\nightwatch\node_modules\nock\lib\scope.js:97:19)
+    at Object.module.exports.attributeValue (C:\workspace\nightwatch\test\lib\nocks.js:63:8)
+    at Module.call (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\christine.zierold\AppData\Roaming\npm\node_modules\nightwatch\node_modules\q\q.js:125:13)
+      </system-err>
+  
+  
+    
+    <testcase
+      name="resolve">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
