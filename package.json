@@ -21,6 +21,7 @@
     "minimatch": "~0.2.14",
     "mkpath": ">=0.1.0",
     "mocha-nightwatch": "2.2.9",
+    "nightwatch": "^0.9.4",
     "optimist": ">=0.3.5",
     "proxy-agent": ">=2.0.0",
     "q": "^1.1.2"
@@ -42,7 +43,7 @@
     "nodeunit": "latest"
   },
   "bin": {
-    "nightwatch": "./bin/nightwatch"
+    "nightwatch": "./node_modules/nightwatch/bin/nightwatch"
   },
   "man": "",
   "scripts": {
