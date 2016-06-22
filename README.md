@@ -11,7 +11,7 @@ First you need to install Node.js (https://nodejs.org/en/)
 
 Then...
 ```sh
-$ git clone git@github.com:christinezierold27/nightwatch-boilerplate.git
+$ git clone https://github.com/christinezierold27/nightwatch-boilerplate.git
 $ cd nightwatch-boilerplate
 $ npm install
 ```
