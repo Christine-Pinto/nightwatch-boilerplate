@@ -3,13 +3,12 @@
 *.idea
 node_modules
 npm-debug.log
-lib-cov
-coverage.html
 selenium-debug.log
-/test/reports
 phantomjsdriver.log
-tests_output
-/features/reports
+features/tests_output
+features/reports
+tests/screenshoots
+tests/reports
 *~
 \#*
 \.#*

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="login"
+    errors="0" failures="0" hostname="" id="" package="loginGroup" skipped="0"
+    tests="4" time="6.543" timestamp="Mon, 04 Jul 2016 11:45:20 GMT">
+  
+    <testcase name="startsite is reachable - Open Login Form" time="2.685" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="enter incorrect login credentials and ensure the login form components" time="2.392" assertions="12">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="enter correct login credentials and redirect to dashboard" time="1.263" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="logout from dashboard and redirect to login form" time="0.2030" assertions="3">
+
+    
+
+    
+
+    
+    </testcase>
+  
+  
+  </testsuite>
+</testsuites>
