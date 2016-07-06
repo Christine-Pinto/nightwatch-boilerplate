@@ -6,10 +6,10 @@ npm-debug.log
 lib-cov
 coverage.html
 selenium-debug.log
-/test/reports
+/tests/reports
 phantomjsdriver.log
 tests_output
-/features/reports
+/features/report
 *~
 \#*
 \.#*
