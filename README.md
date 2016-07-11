@@ -1,9 +1,9 @@
 # nightwatch-boilerplate
 boilerplate for nightwatch.js with selenium
 
-Original Framework is from https://github.com/nightwatchjs/nightwatch 
+Original Framework is from https://github.com/nightwatchjs/nightwatch and also from https://github.com/mucsi96/nightwatch-cucumber
 
-I  created a Boilerplate out of the Example from https://github.com/nightwatchjs
+I  created a Boilerplate for nightwatch to use with and also without cucumber
 
 ## Install Nightwatch Boilerplate
 
@@ -18,43 +18,32 @@ $ npm install
 
 ## Run Tests
 
-In this boilerplate you find one test which does a simple GUI Test on the react part of the airBnB Webiste. The configuration is set up (nightwatch.json) that the selenium server is started with the test and you do not have to start the server manuelly (file is under /lib/sel-serv.jar). The test is saved under test/src/ .
+In this boilerplate you find one test which does a simple GUI Test in Google. The configuration is set up (nightwatch.conf.js) that the selenium server is started with the test and you do not have to start the server manuelly. The test is saved under tests/src/ and also as a cucumber version under features/group .
+
+####to start plain Nightwatch test (tests/src/)
 
 ```sh
 $ cd nightwatch-boilerplate
-$ npm test
+$ npm start
 ```
 
-### Output should look like this
-nightwatch@0.9.4 test C:\workspace\nightwatch
-nightwatch test/src
+####to start cucumber Nightwatch test (features/group)
 
-Starting selenium server... started - PID:  5132
+```sh
+$ cd nightwatch-boilerplate
+$ npm start:cucumber
+```
 
-[Src\airbnb] Test Suite
+##configuration
 
-Running:  Demo test https://www.airbnb.de/
- √ Element <body> was visible after 3278 milliseconds.
+There are three config files in this project. One in the main folder for all the general configurations, one under tests/ for the specific configuration for the plain nightwatch tests and one under features/ for the specific configuration for the cucumber nightwatch tests.
 
-OK. 1 assertions passed. (6.869s)
+###to set up the default starting browser
+open nightwatch.conf.js in the main folder
 
-Running:  part two
+under test_settings --> default --> desiredCapabilities --> browserName  you can change the value to chrome or firefox to change the browser
 
- √ Element <//div[@id="searchbar"]> was present after 46 milliseconds.
- 
- √ Element <div[class=map-canvas]> was present after 688 milliseconds.
- 
- √ Expected element <#header-search-form> to have value contain: "Zürich"
+###to set up that the selenium server starts with tests
+open nightwatch.conf.js in the main folder
 
-OK. 3 assertions passed. (8.251s)
-
-OK. 4  total assertions passed. (15.745s)
-
-
-
-
-
-
-
-
-
+under selenium --> start_process  set the value of TRUE to set up that the selenium server starts with the test
