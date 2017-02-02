@@ -1,0 +1,18 @@
+version: '2'
+services:
+  seleniumhub:
+    image: selenium/hub:2.53.1-beryllium
+    ports:
+      - "4444:4444"
+  firefoxnode:
+    image: selenium/node-firefox:2.53.1-beryllium
+    environment:
+    - HUB_PORT_4444_TCP_ADDR=seleniumhub
+    ports:
+      - 9000
+  chromenode:
+    image: selenium/node-chrome:2.53.1-beryllium
+    ports:
+      - 9000
+    environment:
+      - HUB_PORT_4444_TCP_ADDR=seleniumhub
