@@ -47,3 +47,12 @@ under test_settings --> default --> desiredCapabilities --> browserName  you can
 open nightwatch.conf.js in the main folder
 
 under selenium --> start_process  set the value of TRUE to set up that the selenium server starts with the test
+
+## Use Docker
+In the docker-compose.yml are one Selenium Hub (2.53.1) and two nodes (chrome and firefox) configured. The Images are from https://github.com/SeleniumHQ/docker-selenium
+
+To start/build the Docker containers run this:
+
+```sh
+$ docker-compose up -d
+```
