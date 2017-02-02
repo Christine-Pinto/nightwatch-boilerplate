@@ -1,7 +1,7 @@
 {
   "name": "nightwatch-Boilerplate",
   "description": "nightwatch boilerplate with selenium testing",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": {
     "name": "Christine Zierold"
   },
@@ -11,7 +11,8 @@
   },
   "scripts": {
     "start": "cd tests/ && nightwatch ./src && cd ../",
-    "start:cucumber": "cd features/ && nightwatch --group group && cd ../"
+    "start:cucumber": "cd features/ && nightwatch --group group && cd ../",
+    "lint": "eslint ./tests --max-warnings 0"
   },
   "dependencies": {
     "chai-nightwatch": "^0.1.1",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "cucumber": "^1.2.0",
+    "eslint": "^3.13.1",
     "mocha": "^2.5.3",
     "nightwatch-cucumber": "^4.0.0"
   },

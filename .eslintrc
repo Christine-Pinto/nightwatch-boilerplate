@@ -1,0 +1,51 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "extends": ["eslint:recommended"],
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "comma-dangle": 0,
+    "quotes": [ 1, "single" ],
+    "no-undef": 1,
+    "global-strict": 0,
+    "no-extra-semi": 1,
+    "indent": ["error", 4],
+    "no-underscore-dangle": 0,
+    "no-console": 0,
+    "no-constant-condition": 0,
+    "no-unused-vars": 0,
+    "no-trailing-spaces": [1, { "skipBlankLines": true }],
+    "no-unreachable": 1,
+    "no-alert": 0,
+    "prefer-const": 1,
+    "object-curly-spacing": ["error", "always"],
+    "array-bracket-spacing": ["error", "never"],
+    "block-spacing": ["error", "always"],
+    "comma-spacing": ["error", { before: false, after: true }],
+
+    // specify the maximum length of a line in your program
+    // http://eslint.org/docs/rules/max-len
+    "max-len": ["error", 150, 2, {
+      "ignoreUrls": true,
+      "ignoreComments": false,
+      "ignoreRegExpLiterals": true,
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
+    }],
+
+    // specify the max number of lines in a file
+    // http://eslint.org/docs/rules/max-lines
+    "max-lines": ["off", {
+      "max": 300,
+      "skipBlankLines": true,
+      "skipComments": true
+    }]
+  }
+}
