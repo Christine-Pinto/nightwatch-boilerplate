@@ -30,7 +30,7 @@ module.exports = {
                 path: 'screenshoots/' // relativ to src directory
             },
             desiredCapabilities : {
-                browserName : 'phantomjs',
+                browserName : 'firefox',
                 javascriptEnabled : true,
                 acceptSslCerts : true,
                 'phantomjs.binary.path': phantomjs.path
