@@ -33,6 +33,13 @@ $ npm start
 $ cd nightwatch-boilerplate
 $ npm start:cucumber
 ```
+![Console Output](./img/cucumber_console_log.jpg)
+
+##reports
+###for cucumber
+under features\reports will be a HTML Report created after each cucumber test run.
+
+![HTML Report](./img/cucumber_html_report.jpg)
 
 ##configuration
 
@@ -55,4 +62,13 @@ To start/build the Docker containers run this:
 
 ```sh
 $ docker-compose up -d
+```
+
+After that the containers for the Grid and Nodes are builded and started.
+
+To use these containers for the test you have to change the value for server_path  in the nightwatch.cong.js:
+```sh
+selenium : {
+        server_path : dockerSeleniumHub
+        ...
 ```

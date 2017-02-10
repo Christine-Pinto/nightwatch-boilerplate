@@ -1,6 +1,7 @@
-var seleniumServer = require('selenium-server');
-var chromedriver = require('chromedriver');
-var phantomjs = require('phantomjs-prebuilt');
+const seleniumServer = require('selenium-server');
+const chromedriver = require('chromedriver');
+const phantomjs = require('phantomjs-prebuilt');
+const dockerSeleniumHub = 'seleniumhub';
 
 module.exports = {
     selenium : {
