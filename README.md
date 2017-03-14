@@ -20,14 +20,14 @@ $ npm install
 
 In this boilerplate you find one test which does a simple GUI Test in Google. The configuration is set up (nightwatch.conf.js) that the selenium server is started with the test and you do not have to start the server manuelly. The test is saved under tests/src/ and also as a cucumber version under features/group .
 
-####to start plain Nightwatch test (tests/src/)
+#### to start plain Nightwatch test (tests/src/)
 
 ```sh
 $ cd nightwatch-boilerplate
 $ npm start
 ```
 
-####to start cucumber Nightwatch test (features/group)
+#### to start cucumber Nightwatch test (features/group)
 
 ```sh
 $ cd nightwatch-boilerplate
@@ -41,16 +41,16 @@ under features\reports will be a HTML Report created after each cucumber test ru
 
 ![HTML Report](./img/cucumber_html_report.jpg)
 
-##configuration
+## configuration
 
 There are three config files in this project. One in the main folder for all the general configurations, one under tests/ for the specific configuration for the plain nightwatch tests and one under features/ for the specific configuration for the cucumber nightwatch tests.
 
-###to set up the default starting browser
+### to set up the default starting browser
 open nightwatch.conf.js in the main folder
 
 under test_settings --> default --> desiredCapabilities --> browserName  you can change the value to chrome or firefox to change the browser
 
-###to set up that the selenium server starts with tests
+### to set up that the selenium server starts with tests
 open nightwatch.conf.js in the main folder
 
 under selenium --> start_process  set the value of TRUE to set up that the selenium server starts with the test
@@ -66,7 +66,7 @@ $ docker-compose up -d
 
 After that the containers for the Grid and Nodes are builded and started.
 
-To use these containers for the test you have to change the value for server_path  in the nightwatch.cong.js:
+To use these containers for the test you have to check the value for server_path  in the nightwatch.cong.js:
 ```sh
 selenium : {
         server_path : dockerSeleniumHub
