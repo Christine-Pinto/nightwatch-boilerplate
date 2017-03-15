@@ -59,6 +59,14 @@ module.exports = {
                     acceptSslCerts: true,
                     'phantomjs.binary.path': phantomjs.path
                 }
+            },
+            local_docker:{
+                selenium_host: dockerSeleniumHub,
+                selenium_port: 4444,
+                start_process : false,
+                desiredCapabilities: {
+                    browserName: 'firefox'
+                }
             }
 
         }

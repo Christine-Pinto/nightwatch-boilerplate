@@ -56,7 +56,7 @@ open nightwatch.conf.js in the main folder
 under selenium --> start_process  set the value of TRUE to set up that the selenium server starts with the test
 
 ## Use Docker
-In the docker-compose.yml are one Selenium Hub (2.53.1) and two nodes (chrome and firefox) configured. The Images are from https://github.com/SeleniumHQ/docker-selenium
+In the `docker-compose.yml` are one Selenium Hub (2.53.1) and two nodes (chrome and firefox) configured. The Images are from https://github.com/SeleniumHQ/docker-selenium
 
 To start/build the Docker containers run this:
 
@@ -64,9 +64,11 @@ To start/build the Docker containers run this:
 $ docker-compose up -d
 ```
 
-After that the containers for the Grid and Nodes are builded and started.
+After that the containers for the Grid and Nodes are build and ready to use.
 
-To use these containers for the test you have to check the value for server_path  in the nightwatch.cong.js:
+### usage under Windows 7
+
+If you use Windows 7 you may have to change the value for server_path for the selenium server because Windows7 uses `docker-machine` and that's why the selenium server container is not reachable via the service name 'seleniumhub'. You find this setting in the `nightwatch.cong.js`:
 ```sh
 selenium : {
         server_path : dockerSeleniumHub
