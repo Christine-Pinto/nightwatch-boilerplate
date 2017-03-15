@@ -1,24 +1,45 @@
-module.exports = {
-    tags: ['simpletest'],
-    disabled: false,
-    'Demo test Google' : function (client) {
-        client
-            .url('https://www.google.no/')
-            .pause(2000);
+describe('demo google test for a boilerplate', function() {
+    before(function(client, done) {
+        done();
+    });
 
-        client.expect.element('body').to.be.present;
+    after(function(client, done) {
+        client.end(function() {
+            done();
+        });
+    });
 
-        client.logger('Check Attributes');
-        client.expect.element('body').to.have.attribute('class').which.contains('vasq');
-        client.expect.element('body').to.have.attribute('class').which.matches(/vasq$/);
-        client.expect.element('body').to.have.attribute('class').before(1000);
+    afterEach(function(client, done) {
+        done();
+    });
 
-        client.expect.element('#hplogo').text.to.match(/Nor/).before(1000);
+    beforeEach(function(client, done) {
+        done();
+    });
 
-        client.setValue('#lst-ib', 'Norway').pause(500);
-        client.expect.element('#lst-ib').to.have.value.equal('Norway');
-        client.expect.element('#lst-ib').to.be.an('input');
-        client.expect.element('#lst-ib').to.be.not.selected;
-        client.expect.element('#lst-ib').to.be.visible;
-    }
-};
+    describe('with Nightwatch uses BDD style', function() {
+        it('to search for something', function(client) {
+            client
+                .url('http://google.com')
+                .expect.element('body').to.be.present.before(1000);
+
+            client.setValue('input[type=text]', ['nightwatch boilerplate', client.Keys.ENTER])
+                .waitForElementVisible('#rcnt', 1500)
+                .assert.containsText('#main', 'Nightwatch');
+        });
+        it('to click on pictures section', function(client) {
+            client
+                .click('#hdtb-msb > div:nth-child(1) > div:nth-child(2)')
+                .useXpath() //you can also you XPath to find a element
+                .waitForElementVisible('//*[@id="isr_mc"]', 5000)
+        });
+    });
+
+    describe('and see if second describe block', function() {
+        it('to search for something', function(client) {
+            client
+                .url('http://github.com')
+                .waitForElementVisible('body', 2000)
+        });
+    });
+});
