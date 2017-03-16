@@ -43,7 +43,7 @@ under features\reports will be a HTML Report created after each cucumber test ru
 
 ## configuration
 
-There are three config files in this project. One in the main folder for all the general configurations, one under tests/ for the specific configuration for the plain nightwatch tests and one under features/ for the specific configuration for the cucumber nightwatch tests.
+There are two config files in this project. One in the main folder (`nightwatch.conf.js`) for all the general configurations and one under `tests/nightwatch.conf.js` for the specific configuration for the plain nightwatch tests.
 
 ### to set up the default starting browser
 open nightwatch.conf.js in the main folder
