@@ -1,17 +1,18 @@
 {
   "name": "nightwatch-Boilerplate",
-  "description": "nightwatch boilerplate with selenium testing",
-  "version": "0.1.0",
+  "description": "nightwatch boilerplate for End-to-End test with either nightwatch plain oder nightwatch-cucumber",
+  "version": "1.0.0",
+  "license": "MIT",
   "author": {
     "name": "Christine Zierold"
   },
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "git@github.com/christinezierold27/nightwatch-boilerplate.git"
   },
   "scripts": {
     "start": "cd tests/ && nightwatch ./src && cd ../",
-    "start:cucumber": "cd features/ && nightwatch --group group && cd ../",
+    "start:cucumber": "nightwatch --cucumber",
     "lint": "eslint ./tests --max-warnings 0"
   },
   "dependencies": {
@@ -21,14 +22,15 @@
     "nightwatch": "^0.9.5",
     "nightwatch-html-reporter": "^1.0.6",
     "phantomjs-prebuilt": "^2.1.7",
-    "selenium-server": "^2.53.1"
+    "selenium-server": "^3.3.1",
+    "yargs": "^7.0.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",
-    "cucumber": "^1.2.0",
+    "cucumber": "^2.0.0-rc.8",
     "eslint": "^3.13.1",
-    "mocha": "^2.5.3",
-    "nightwatch-cucumber": "^4.0.0"
+    "mocha": "^3.2.0",
+    "nightwatch-cucumber": "^7.0.0"
   },
   "bin": {
     "nightwatch": "./node_modules/nightwatch/bin/nightwatch"
