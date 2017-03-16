@@ -3,11 +3,11 @@ boilerplate for nightwatch.js with selenium
 
 Original Framework is from https://github.com/nightwatchjs/nightwatch and also from https://github.com/mucsi96/nightwatch-cucumber
 
-I  created a Boilerplate for nightwatch to use with and also without cucumber
+I  created a Boilerplate for nightwatch to use with and also without nightwatch-cucumber.
 
 ## Install Nightwatch Boilerplate
 
-First you need to install Node.js (https://nodejs.org/en/)
+First you need to install Node.js (https://nodejs.org/en/) and Java.
 
 Then...
 ```sh
@@ -35,8 +35,8 @@ $ npm start:cucumber
 ```
 ![Console Output](./img/cucumber_console_log.jpg)
 
-##reports
-###for cucumber
+## reports
+### for cucumber
 under features\reports will be a HTML Report created after each cucumber test run.
 
 ![HTML Report](./img/cucumber_html_report.jpg)
