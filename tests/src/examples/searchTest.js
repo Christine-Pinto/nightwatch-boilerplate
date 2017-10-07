@@ -1,6 +1,6 @@
 module.exports = {
     tags: ['simpletest'],
-    disabled: false,
+    disabled: true,
 
     'Google Simple Search Test' : function (client) {
         const searchObject = 'Germany';
