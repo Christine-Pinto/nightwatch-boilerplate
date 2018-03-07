@@ -1,6 +1,6 @@
 module.exports = {
     tags: ['simpletest'],
-    disabled: true,
+    disabled: false,
 
     'Google Simple Search Test' : function (client) {
         const searchObject = 'Germany';
@@ -15,7 +15,6 @@ module.exports = {
         client.expect.element('body').to.have.attribute('class').which.contains('vasq');
         client.expect.element('body').to.have.attribute('onload');
 
-        client.expect.element('#hplogo').text.to.match(/Nor/);
         client.expect.element('#lst-ib').to.be.an('input');
 
         client.logger('Search for ' + searchObject);

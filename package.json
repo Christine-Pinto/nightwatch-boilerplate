@@ -13,7 +13,8 @@
   "scripts": {
     "start": "cd tests/ && nightwatch ./src && cd ../",
     "start:cucumber": "nightwatch --cucumber",
-    "lint": "eslint ./tests --max-warnings 0"
+    "lint": "eslint ./tests --max-warnings 0",
+    "docker": "cd tests/ && nightwatch --env local_docker ./src && cd ../"
   },
   "dependencies": {
     "chai-nightwatch": "^0.1.1",

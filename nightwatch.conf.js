@@ -1,7 +1,7 @@
 const seleniumServer = require('selenium-server');
 const chromedriver = require('chromedriver');
 const phantomjs = require('phantomjs-prebuilt');
-const dockerSeleniumHub = 'seleniumhub';
+const dockerSeleniumHub = '127.0.0.1';
 const argv = require('yargs').argv;
 
 
